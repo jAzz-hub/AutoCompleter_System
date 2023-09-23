@@ -48,6 +48,8 @@ class BTree
 
 
         void In_Ordem(shared_ptr<BT> T);
+        void inOrdemWithoutPrint(shared_ptr<BT> T);
+        void inOrdemToOutput(shared_ptr<BT> T, string nameOfFile, string nameOfInput, string nameOfSample);
 
         void Right_DFS(shared_ptr<BT> &T, shared_ptr<BT> auxT);
         void Remove_Node(shared_ptr<BT> &T, string key);

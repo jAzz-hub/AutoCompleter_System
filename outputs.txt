@@ -1,0 +1,18 @@
+ÁRVORE AVL - software� se repetiu 	-1vezes
+ÁRVORE AVL - software� se repetiu 	-1vezes
+ÁRVORE AVL - software� se repetiu 	-1vezes
+ÁRVORE AVL - software� se repetiu 	-1vezes
+ÁRVORE AVL - software� se repetiu 	-1vezes
+ÁRVORE AVL - software� se repetiu 	-1vezes
+ÁRVORE AVL - softwaresistema se repetiu 	115vezes
+ÁRVORE AVL - softwarepensamento se repetiu 	115vezes
+ÁRVORE AVL - softwaresentido se repetiu 	200vezes
+ÁRVORE AVL - softwaremetas se repetiu 	199vezes
+ÁRVORE AVL - softwaredesenvolvimento se repetiu 	200vezes
+ÁRVORE AVL - softwareinformações se repetiu 	200vezes
+AVL   	software	sistema	115
+AVL   	software	pensamento	115
+AVL   	software	sentido	200
+AVL   	software	metas	199
+AVL   	software	desenvolvimento	200
+AVL   	software	informações	200

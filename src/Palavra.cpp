@@ -4,10 +4,9 @@
 vector<string> WordsReader()
 {
     vector<string> lista_de_entradas;
-
     int counter = 0;
     char ch[100];
-    char* path = (char*)"./dataset/input.data";
+    char* path = (char*)"./dataset/input.txt";
     FILE *pointerToFile = fopen(path, "r");
      
 
@@ -21,5 +20,6 @@ vector<string> WordsReader()
             counter+=1;            
         }
     }
+    fclose(pointerToFile);
     return lista_de_entradas;
 }

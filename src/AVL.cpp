@@ -199,6 +199,29 @@ void AVLT::inOrdem(AVLT *T)
     }
 }
 
+void AVLT::inOrdemWithoutPrint(AVLT *T)
+{
+    if(!(T==NULL))
+    {
+        inOrdemWithoutPrint(T->left_branch);
+        inOrdemWithoutPrint(T->right_branch);
+    }
+}
+
+
+void AVLT::inOrdemToOutput(AVLT *T, string nameOfFile, string nameOfInput, string nameOfSample)
+{
+    ofstream arquivo(nameOfFile, ios::app);
+
+    arquivo << "\n\t\tAVL   \t\t\t"<<nameOfSample<<"\t\t\t"<<nameOfInput<<"\t\t\t";
+    if(!(T==NULL))
+    {
+        inOrdemWithoutPrint(T->left_branch);
+        arquivo << T->key<<"\t\t"<<"\t\t\t"<<T->ocurrencies;
+        inOrdemWithoutPrint(T->right_branch);
+    }
+}
+
 void AVLT::preOrdem(AVLT *T)
 {
     if(!(T==NULL))

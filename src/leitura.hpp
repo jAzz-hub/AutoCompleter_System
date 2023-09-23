@@ -4,5 +4,5 @@
 
 void LerEntradasPorAmostra(Entradas_e_Amostras Dataframe);
 
-void write_the_trees(AVLT avl, Btree b);
+void write_the_trees(AVLT avl, BTree b, string nameOfFile , string nameOfInputs,string nameOfSample);
 #endif

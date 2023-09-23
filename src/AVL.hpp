@@ -3,7 +3,6 @@
 
 #include"Heap.hpp"
 #include"BTree.hpp"
-#include"HuffmanTree.hpp"
 
 using namespace std;
 
@@ -38,6 +37,9 @@ class AVLT
         void Insert_Node( AVLT **T, int ocurrencies,string key,int weight);
 
         void inOrdem(AVLT *T);
+        void inOrdemWithoutPrint(AVLT* T);
+        
+        void inOrdemToOutput(AVLT *T, string nameOfFile, string nameOfInput, string nameOfSample);
             
         void preOrdem(AVLT *T);
             

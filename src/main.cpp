@@ -45,77 +45,7 @@ int main()
 
     LerEntradasPorAmostra(Dataframe);
 
-    AVLT at = AVLT();
-
-
-    int n1 = 5;
-    string n2 = "vã";
-    int n3 = 0;
-
-
-    int k1 = 3;
-    string k2 = "aério";
-    int k3 = 0;
-
-    int v1 = 7;
-    string v2 = "`";
-    int v3 = 0;
     
-
-    int x1 = 2;
-    string x2 = "lança perfume";
-    int x3 = 0;
-    
-    int w1 = 4;
-    string w2 = "guarda-roupas";
-    int w3 = 0;
-
-    int e1 = 6;
-    string e2 = "marota";
-    int e3 = 0;
-
-    int d1 = 8;
-    string d2 = "lamora";
-    int d3 = 0;
-
-
-    at.Insert_Node(&at.selfCopy,n1, n2, n3); //5
-        // cout<<endl<<"\t"<<at.selfCopy->ocurrencies;
-    
-    at.Insert_Node(&at.selfCopy,v1, v2, v3); //7
-        // cout<<endl<<"\t"<<at.selfCopy->right_branch->ocurrencies;
-    
-    at.Insert_Node(&at.selfCopy,e1, e2, e3); //6
-        // cout<<endl<<"\t"<<at.selfCopy->left_branch->ocurrencies;
-
-    // cout<<at.selfCopy->right_branch->ocurrencies;
-
-    // cout<<at.selfCopy->left_branch->left_branch->->ocurrencies;
-
-    at.Insert_Node(&at.selfCopy,k1, k2, k3); //3
-
-    at.Insert_Node(&at.selfCopy,x1, x2, x3); //2
-    
-    at.Insert_Node(&at.selfCopy,w1, w2, w3); //4
-
-    at.Insert_Node(&at.selfCopy,d1, d2, d3); //8
-
-    at.inOrdem(at.selfCopy);
-    cout<<endl;
-    
-    delete at.selfCopy;
-
-    at.selfCopy = new AVLT();
-    cout<<endl;
-
-    at.Insert_Node(&at.selfCopy,x1, x2, x3); //2
-    
-    at.Insert_Node(&at.selfCopy,w1, w2, w3); //4
-
-    at.Insert_Node(&at.selfCopy,d1, d2, d3); //8
-
-    at.inOrdem(at.selfCopy);
-
-
+    // delete at.selfCopy;
 
 }

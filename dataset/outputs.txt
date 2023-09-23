@@ -1,0 +1,13 @@
+Tipo de Árvore |	 Amostra de entrada |	 palavra de entrada |	 palavra 	|	número de repetições 
+		AVL   			./dataset/filosofia.txt			software			sistema					115
+		 B 			./dataset/filosofia.txt			software			às					95
+		AVL   			./dataset/filosofia2.txt			software			pensamento					115
+		 B 			./dataset/filosofia2.txt			software			às					95
+		AVL   			./dataset/globalizacao.txt			software			sentido					200
+		 B 			./dataset/globalizacao.txt			software			determinação					133
+		AVL   			./dataset/politica.txt			software			metas					199
+		 B 			./dataset/politica.txt			software			segurança					134
+		AVL   			./dataset/ti.txt			software			desenvolvimento					200
+		 B 			./dataset/ti.txt			software			integridade					134
+		AVL   			./dataset/ti2.txt			software			informações					200
+		 B 			./dataset/ti2.txt			software			problemas					134

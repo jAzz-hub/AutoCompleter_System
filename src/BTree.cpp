@@ -111,6 +111,29 @@ void BTree::In_Ordem(shared_ptr<BT> T)
     }
 }
 
+void BTree::inOrdemWithoutPrint(shared_ptr<BT> T)
+{
+    if(!(T==NULL))
+    {
+        inOrdemWithoutPrint(T.get()->left_branch);
+        inOrdemWithoutPrint(T.get()->right_branch);
+    }
+}
+
+void BTree::inOrdemToOutput(shared_ptr<BT> T, string nameOfFile, string nameOfInput, string nameOfSample)
+{
+    ofstream arquivo(nameOfFile, ios::app);  // Abre o arquivo para escrita, substituindo qualquer arquivo existente.
+
+    arquivo << "\n\t\t B \t\t\t"<<nameOfSample<<"\t\t\t"<< nameOfInput<<"\t\t\t";
+    if (T != NULL)  // Verifica se o ponteiro não é nulo.
+    {
+        inOrdemWithoutPrint(T.get()->left_branch);
+        arquivo << T.get()->sub_root.key <<"\t\t"<<"\t\t\t"<<T.get()->sub_root.ocurrencies;
+        inOrdemWithoutPrint(T.get()->right_branch);
+    }
+    arquivo.close();
+}
+
 
 void BTree::Right_DFS(shared_ptr<BT> &T, shared_ptr<BT> auxT)
 { 
