@@ -1,13 +1,37 @@
 Tipo de Árvore |	 Amostra de entrada |	 palavra de entrada |	 palavra 	|	número de repetições 
-		AVL   			./dataset/filosofia.txt			software			sistema					115
-		 B 			./dataset/filosofia.txt			software			às					95
-		AVL   			./dataset/filosofia2.txt			software			pensamento					115
-		 B 			./dataset/filosofia2.txt			software			às					95
-		AVL   			./dataset/globalizacao.txt			software			sentido					200
-		 B 			./dataset/globalizacao.txt			software			determinação					133
-		AVL   			./dataset/politica.txt			software			metas					199
-		 B 			./dataset/politica.txt			software			segurança					134
-		AVL   			./dataset/ti.txt			software			desenvolvimento					200
-		 B 			./dataset/ti.txt			software			integridade					134
-		AVL   			./dataset/ti2.txt			software			informações					200
-		 B 			./dataset/ti2.txt			software			problemas					134
+		AVL   			./dataset/filosofia.txt			software
+			sistema					115
+		 B 			./dataset/filosofia.txt			software
+			às					95
+		AVL   			./dataset/filosofia.txt			as			sistema					115
+		 B 			./dataset/filosofia.txt			as			às					95
+		AVL   			./dataset/filosofia2.txt			software
+			pensamento					115
+		 B 			./dataset/filosofia2.txt			software
+			às					95
+		AVL   			./dataset/filosofia2.txt			as			pensamento					115
+		 B 			./dataset/filosofia2.txt			as			às					95
+		AVL   			./dataset/globalizacao.txt			software
+			sentido					200
+		 B 			./dataset/globalizacao.txt			software
+			determinação					133
+		AVL   			./dataset/globalizacao.txt			as			sentido					200
+		 B 			./dataset/globalizacao.txt			as			determinação					133
+		AVL   			./dataset/politica.txt			software
+			metas					199
+		 B 			./dataset/politica.txt			software
+			segurança					134
+		AVL   			./dataset/politica.txt			as			metas					199
+		 B 			./dataset/politica.txt			as			segurança					134
+		AVL   			./dataset/ti.txt			software
+			desenvolvimento					200
+		 B 			./dataset/ti.txt			software
+			sistemas					134
+		AVL   			./dataset/ti.txt			as			desenvolvimento					200
+		 B 			./dataset/ti.txt			as			sistemas					134
+		AVL   			./dataset/ti2.txt			software
+			informações					200
+		 B 			./dataset/ti2.txt			software
+			software					134
+		AVL   			./dataset/ti2.txt			as			informações					200
+		 B 			./dataset/ti2.txt			as			software					134
