@@ -1,5 +1,5 @@
 <div align = "center" >
-<img src="./img/Head.png" height="28%" width="28%">
+<img src="./img/capa.png" height="28%" width="28%">
 </div>
 
 <div align="justify">
@@ -23,8 +23,8 @@
 ## Índice
  - [Introdução](#Introdução)
 
- - [Fundamentação Teórica](#Fundamentação-Teórica)
-    - [Estruturas de Dados](#Estruturas-de-Dados)
+ - [Fundamentação Teórica](#fundamentação-teórica)
+    - [Estruturas de Dados](#estruturas-de-dados)
         - [Árvore Binária](#)
         - [Árvore AVL](#)
         - [Árvore de Huffman](#)
@@ -71,6 +71,8 @@ Este repositório apresenta  a solução para um problema proposto na disciplina
 - Nomes de variáveis: _`a`_, _`b`_.
 
 - Nomes de funções: **`xpto()`**, **`sum()`**.
+
+- $n$ - Número de nós em uma árvore qualquer.
 
 - Nomes de comandos digitados no terminal,funções ou variáveis serão referênciados da seguinte forma: _**touch main.cpp**_, _**make run**_.
 
@@ -187,13 +189,31 @@ As árvores de jogos modelam alguns tipos de jogos, considerando que estes se cl
 Fonte: Disponível no <a href = "https://iq.opengenus.org/game-tree/">link</a>.
 <br>
 
-<!-- ##### Árvore Binária
-    Árvores no geral podem apresentar diversas formas de uso.
+##### Árvore Binária
+As estruturas utilizadas para armazenar os números no programa criado são árvores binárias e árvores AVL. Portanto compreende-se que uma árvore binária é uma esturutra composta por diversos nós. Cada nó da árvores binária armazena um número. Os nós das árvores binárias se organizam localmente de modo que um nó pai tenha um, dois ou nenhum pai filho. Quando um número é gravado em um nó à direita de uma ramificação aquele terá valor maior que a ramificação, à esquerda demonstra que terá valor menor. Os últimos nós inseridos em uma árvore estão próximos às folhas e os primeiros mais próximos à raíz.
+
+<div align = "center" >
+<br>
+<strong> Árvore Binária </strong>
+<br>
+<img src="./img/BinaryTree.png" height="78%" width="78%">
+<br>
+A forma final de uma árvore binária independe da ordem com que os elementos serão inseridos.
+<br>
+Fonte: Construção pelo Autor.<a href = ""></a>
+<br>
+
+
 
 ##### Árvore AVL
+ Diferente da árvore binária árvores AVL(Adelson Velsky and Landis) tem sua forma final enviesada pela ordem de inserção das entradas. Isso acontece pelo fato de que árvores AVL terem métodos que tentam manter todas as folhas em mesma altura.
+
+ O custo de pesquisa partindo da raíz até um nó folha na árvore está próximo de $\log_{2}(n)$, mas isso é verdade apenas quando as alturas também se aproximam o suficiente.
+
+# ***Obs o quanto é o suficiente??***
 
 ##### Árvore de Huffman
-
+<!-- 
 ### Algoritmos
 -
  Os algoritmos utilizados para $f(x)$ indexar valores em $Ha$ e para que $He$ tenha sempre menores valores em $r$ são respectivamente:
