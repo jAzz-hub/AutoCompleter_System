@@ -46,6 +46,10 @@ Este repositório apresenta  a solução para um problema proposto na disciplina
 
 - $n$ - Número de nós em uma árvore qualquer.
 
+- **_Ramificação_** - Sub árvore esquerda que divide nó pai com uma sub árvore direita. Ou sub árvore direita que divide nó pai com uma sub árvore esquerda.
+
+- $h_{folhas}$ - Altura de uma dentre quaisquer folhas pertencentes à uma árvore qualquer.
+
 - Nomes de comandos digitados no terminal,funções ou variáveis serão referênciados da seguinte forma: _**touch main.cpp**_, _**make run**_.
 
 ## Fundamentação Teórica
@@ -162,7 +166,7 @@ Fonte: Disponível no <a href = "https://iq.opengenus.org/game-tree/">link</a>.
 <br>
 
 ##### Árvore Binária
-As estruturas utilizadas para armazenar os números no programa criado são árvores binárias e árvores AVL. Portanto compreende-se que uma árvore binária é uma esturutra composta por diversos nós. Cada nó da árvores binária armazena um número. Os nós das árvores binárias se organizam localmente de modo que um nó pai tenha um, dois ou nenhum pai filho. Quando um número é gravado em um nó à direita de uma ramificação aquele terá valor maior que a ramificação, à esquerda demonstra que terá valor menor. Os últimos nós inseridos em uma árvore estão próximos às folhas e os primeiros mais próximos à raíz.
+As estruturas utilizadas para armazenar os números no programa criado são árvores binárias e árvores AVL. Portanto compreende-se que uma árvore binária é uma esturutra composta por diversos nós. Cada nó da árvores binária armazena um número. Os nós das árvores binárias se organizam localmente de modo que um nó pai tenha um, dois ou nenhum pai filho. Quando um número é gravado em um nó à direita de outro, este terá valor maior que a o mesmo.Já quando um valor é gravado no nó à esquerda do atual, significa que o atual tem valor maior que aquele. Os últimos nós inseridos em uma árvore estão próximos às folhas e os primeiros mais próximos à raíz.
 
 <div align = "center" >
 <br>
@@ -180,9 +184,50 @@ Fonte: Construção pelo Autor.<a href = ""></a>
 ##### Árvore AVL
  Diferente da árvore binária árvores AVL(Adelson Velsky and Landis) tem sua forma final enviesada pela ordem de inserção das entradas. Isso acontece pelo fato de que árvores AVL terem métodos que tentam manter todas as folhas em mesma altura.
 
- O custo de pesquisa partindo da raíz até um nó folha na árvore está próximo de $\log_{2}(n)$, mas isso é verdade apenas quando as alturas também se aproximam o suficiente.
+ O custo de pesquisa partindo da raíz até um nó folha na árvore está próximo de $\log_{2}(n)$, mas isso é verdade apenas quando as alturas também se aproximam o suficiente. O suficiente para os métodos que balanceiam as árvores é permitir que $h_{folhas} \leq 1$.
 
-# ***Obs o quanto é o suficiente??***
+Para que a árvore tenha essas caracterísitcas, rotações são feitas na árvore AVL. Quando $|h_{1folhas} - h_{2folhas}| = 2$ o algoritmo identifica o lado da **_Ramificação_** de maior profundidade em relação ao pai. Entenda mais sobre as rotações nas imagens abaixo:
+
+<div align = "center" >
+<br>
+<strong> Rotação para Esquerda </strong>
+<br>
+<img src="./img/L.png" height="78%" width="78%">
+<br>
+Acontece quando a <strong><i>Ramificação</i></strong> direita é mais profunda que a esquerda em 2 nós.
+<br>
+Fonte: Construção pelo Autor.<a href = ""></a>
+<br>
+
+<div align = "center" >
+<br>
+<strong> Rotação para Direita </strong>
+<br>
+<img src="./img/R.png" height="78%" width="78%">
+<br>
+Acontece quando a <strong><i>Ramificação</i></strong> esquerda é mais profunda que a direita em 2 nós.
+<br>
+Fonte: Construção pelo Autor.<a href = ""></a>
+<br>
+<br>
+<br>
+
+ Nos outros dois casos abaixo, são aplicadas respectivamente:
+1. uma rotação à esquerda é aplicada em todos os nós e depois uma direita é aplicada apenas ao nó direito.
+
+2. uma rotação direita é aplicada à todos os nós e depois uma esquerda é aplicada apenas ao nó esquerdo.
+
+<div align = "center" >
+<br>
+<strong> Casos de Rotações Duplas </strong>
+<br>
+<img src="./img/LR_RL.png" height="78%" width="78%">
+<br>
+Acontece quando a <strong><i>Ramificação</i></strong>
+<br>
+Fonte: Construção pelo Autor.<a href = ""></a>
+<br>
+
 
 ##### Árvore de Huffman
 <!-- 
