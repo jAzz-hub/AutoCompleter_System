@@ -28,35 +28,7 @@
         - [Árvore Binária](#)
         - [Árvore AVL](#)
         - [Árvore de Huffman](#)
-    - [Algoritmos](#Algoritmos)
-        - [Uma breve Introdução aos Operadores Bit a Bit](#uma-breve-introdução-aos-operadores-bit-a-bit)
-        - [MurmurHashUnaligned2](#murmurhashunaligned2)
-        - [MinHeapify](#minheapify)
-
- - [Objetivos](#objetivos)
-
- - [Metodologia](#metodologia)
-    - [Arquivos](#arquivos)
-        - [Entradas](#entradas)
-    - [Funcionamento](#funcionamento)
-        - [1. Primeira Leitura de Arquivos](#1-primeira-leitura-de-arquivos)
-
-            - [1.1. Casos Especiais](#11-casos-especiais)
-        
-        - [2. Constuindo as Árvores AVL](#)
-
-        - [3. Construindo as Árvores B](#)
-
-        - [4. Construindo as Árvores de Huffman](#)
-        
-        - [5. Escrevendo no Arquivo de Saída](#)
-
- - [Conclusão, Reflexões e Aprendizados](#conclusc3a3o-reflexc3b5es-e-aprendizados-1)
-    - [União de Estruturas de Dados e Algoritmos](#união-de-estruturas-de-dados-e-algoritmos)
-    - [Leitura O(1)](#leitura-o1)
-    - [K * n * log(K)](#k--n--logk)
-    - [Aprendizados](#aprendizados)
-
+    
 - [Compilação e Execução](#Compilação-e-Execução)
 - [Ambiente de Desenvolvimento](#Ambiente-de-Desenvolvimento)
 
@@ -89,11 +61,11 @@ Este repositório apresenta  a solução para um problema proposto na disciplina
 árvore de Huffman isso é diferente.
 
 #### Árvores
-As árvores são contribuição essencial para a computação uma vez que tem o potencial de facilitar a resolução de diversos tipos de problemas com seu uso. Para Rosen(2012, p. 757–769) sendo assim as árvores tem tipos que se classificam de acordo com o tipo de problemática que elas abordam, sendo estes tipos nomeados como: árvores de pesquisa, árvores de decisão, árvores de códigos livres de prefixo e árvores de jogos.
+- As árvores são contribuição essencial para a computação uma vez que tem o potencial de facilitar a resolução de diversos tipos de problemas com seu uso. Para Rosen(2012, p. 757–769) sendo assim as árvores tem tipos que se classificam de acordo com o tipo de problemática que elas abordam, sendo estes tipos nomeados como: árvores de pesquisa, árvores de decisão, árvores de códigos livres de prefixo e árvores de jogos.
 
-As árvores de pesquisa tem como propósito armazenar dados em seus nós. E é escolhida como estrutura de dados com a finalidade de minimizar custos em casos onde segundo Pires (2023, p.3)"o conteúdo do arquivo é estavel, ou seja, não sofre muitas modificações ao decorrer do tempo, torna-se mais importante minimizar o tempo de pesquisa sem a necessidade de se preocupar com o tempo gasto na estruturação do arquivo". Em síntese, estas são estruturas de dados que favorecem sistemas onde a pesquisa é mais realizada que a inserção, remoção e alteração dos dados.
+- As árvores de pesquisa tem como propósito armazenar dados em seus nós. E é escolhida como estrutura de dados com a finalidade de minimizar custos em casos onde segundo Pires (2023, p.3)"o conteúdo do arquivo é estavel, ou seja, não sofre muitas modificações ao decorrer do tempo, torna-se mais importante minimizar o tempo de pesquisa sem a necessidade de se preocupar com o tempo gasto na estruturação do arquivo". Em síntese, estas são estruturas de dados que favorecem sistemas onde a pesquisa é mais realizada que a inserção, remoção e alteração dos dados.
 
-As árvores de decisão são utilizadas como um TAD(Tipo Abstrato de Dados), para modelar problemas onde uma série de decisões podem levar à uma solução. Essas estruturas terão todas as possiblidades de decisão em todos os seus nós, estes nós se ramificam em subdecisões de forma que estas ramificações dependam da decisão presente em seu nó pai para serem realizadas. Observe um exemplo de árvore de decisão dado o problema de identificar objetos.
+- As árvores de decisão são utilizadas como um TAD(Tipo Abstrato de Dados), para modelar problemas onde uma série de decisões podem levar à uma solução. Essas estruturas terão todas as possiblidades de decisão em todos os seus nós, estes nós se ramificam em subdecisões de forma que estas ramificações dependam da decisão presente em seu nó pai para serem realizadas. Observe um exemplo de árvore de decisão dado o problema de identificar objetos.
 
 <div align = "center" >
 <br>
@@ -114,7 +86,7 @@ Fonte: Disponível no <a href = "https://edisciplinas.usp.br/pluginfile.php/4469
 Fonte: Disponível no <a href = "https://edisciplinas.usp.br/pluginfile.php/4469825/mod_resource/content/1/ArvoresDecisao_normalsize.pdf">link</a>.
 <br>
 
-As árvores de códigos livres de prefixo são árvores que estabelecem relações entre um código de caracter e um caracter por exemplo. Isso significa que essas relações não permitem ambiguidade, de forma que uma sequência de símbolos seja associada à outra sequência exclusiva que representa os mesmos. Veja um exemplo associado ao uso do algoritmo de Huffman.
+- As árvores de códigos livres de prefixo são árvores que estabelecem relações entre um código de caracter e um caracter por exemplo. Isso significa que essas relações não permitem ambiguidade, de forma que uma sequência de símbolos seja associada à outra sequência exclusiva que representa os mesmos. Veja um exemplo associado ao uso do algoritmo de Huffman.
 <table>
 
 <tr>
@@ -178,7 +150,7 @@ As árvores de códigos livres de prefixo são árvores que estabelecem relaçõ
 
 </table>
 
-As árvores de jogos modelam alguns tipos de jogos, considerando que estes se classificam como jogos de dois jogadores, onde cada um destes tem completo conhecimento dos aspectos que esse jogo toma durante toda a partida. Classificados como jogos combinatórios por Fava(2018, p. 1), estes tipos normalmente são jogados em turnos e não envolvem elementos de probabilidade, alguns exemplos são Xadrez e Damas. Considerando que as jogadas são deterministicas e não probabilísticas, estes jogos também são caracterizados como equânimes ou imparciais e é isso que permite com que a árvore seja atribuída à eles. Veja a abstração de um turno de jogo da velha modelado por uma árvore de jogos.
+- As árvores de jogos modelam alguns tipos de jogos, considerando que estes se classificam como jogos de dois jogadores, onde cada um destes tem completo conhecimento dos aspectos que esse jogo toma durante toda a partida. Classificados como jogos combinatórios por Fava(2018, p. 1), estes tipos normalmente são jogados em turnos e não envolvem elementos de probabilidade, alguns exemplos são Xadrez e Damas. Considerando que as jogadas são deterministicas e não probabilísticas, estes jogos também são caracterizados como equânimes ou imparciais e é isso que permite com que a árvore seja atribuída à eles. Veja a abstração de um turno de jogo da velha modelado por uma árvore de jogos.
 
 <div align = "center" >
 <br>
