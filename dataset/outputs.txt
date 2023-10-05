@@ -1,37 +1,162 @@
-Tipo de Árvore |	 Amostra de entrada |	 palavra de entrada |	 palavra 	|	número de repetições 
-		AVL   			./dataset/filosofia.txt			software
-			sistema					115
-		 B 			./dataset/filosofia.txt			software
-			às					95
-		AVL   			./dataset/filosofia.txt			as			sistema					115
-		 B 			./dataset/filosofia.txt			as			às					95
-		AVL   			./dataset/filosofia2.txt			software
-			pensamento					115
-		 B 			./dataset/filosofia2.txt			software
-			às					95
-		AVL   			./dataset/filosofia2.txt			as			pensamento					115
-		 B 			./dataset/filosofia2.txt			as			às					95
-		AVL   			./dataset/globalizacao.txt			software
-			sentido					200
-		 B 			./dataset/globalizacao.txt			software
-			determinação					133
-		AVL   			./dataset/globalizacao.txt			as			sentido					200
-		 B 			./dataset/globalizacao.txt			as			determinação					133
-		AVL   			./dataset/politica.txt			software
-			metas					199
-		 B 			./dataset/politica.txt			software
-			segurança					134
-		AVL   			./dataset/politica.txt			as			metas					199
-		 B 			./dataset/politica.txt			as			segurança					134
-		AVL   			./dataset/ti.txt			software
-			desenvolvimento					200
-		 B 			./dataset/ti.txt			software
-			sistemas					134
-		AVL   			./dataset/ti.txt			as			desenvolvimento					200
-		 B 			./dataset/ti.txt			as			sistemas					134
-		AVL   			./dataset/ti2.txt			software
-			informações					200
-		 B 			./dataset/ti2.txt			software
-			software					134
-		AVL   			./dataset/ti2.txt			as			informações					200
-		 B 			./dataset/ti2.txt			as			software					134
+Como ler este arquivo?Tipo de Árvore: Nome do tipo
+|		Amostra de entrada: caminho_até_arquivo.txt
+|		palavra de entrada: palavra escolhida
+|		palavra:chave_da_heap 
+|		número de repetições: número_de_repetições_da_chave
+
+tipo de árvore: AVL
+		Nome da Amostra: ./dataset/filosofia.txt
+		Nome da entrada: software
+		Nome da palavra:sistema
+		Número de Ocorrências:115
+
+
+Tipo da árvore:Binária 
+		Nome da Amostra:./dataset/filosofia.txt
+		Nome da Entrada:software
+		Nome da palavra:às
+		Número de ocorrências:95
+
+
+tipo de árvore: AVL
+		Nome da Amostra: ./dataset/filosofia.txt
+		Nome da entrada: política		Nome da palavra:sistema
+		Número de Ocorrências:115
+
+
+Tipo da árvore:Binária 
+		Nome da Amostra:./dataset/filosofia.txt
+		Nome da Entrada:política		Nome da palavra:às
+		Número de ocorrências:95
+
+
+tipo de árvore: AVL
+		Nome da Amostra: ./dataset/filosofia2.txt
+		Nome da entrada: software
+		Nome da palavra:pensamento
+		Número de Ocorrências:115
+
+
+Tipo da árvore:Binária 
+		Nome da Amostra:./dataset/filosofia2.txt
+		Nome da Entrada:software
+		Nome da palavra:às
+		Número de ocorrências:95
+
+
+tipo de árvore: AVL
+		Nome da Amostra: ./dataset/filosofia2.txt
+		Nome da entrada: política		Nome da palavra:pensamento
+		Número de Ocorrências:115
+
+
+Tipo da árvore:Binária 
+		Nome da Amostra:./dataset/filosofia2.txt
+		Nome da Entrada:política		Nome da palavra:às
+		Número de ocorrências:95
+
+
+tipo de árvore: AVL
+		Nome da Amostra: ./dataset/globalizacao.txt
+		Nome da entrada: software
+		Nome da palavra:sentido
+		Número de Ocorrências:200
+
+
+Tipo da árvore:Binária 
+		Nome da Amostra:./dataset/globalizacao.txt
+		Nome da Entrada:software
+		Nome da palavra:determinação
+		Número de ocorrências:133
+
+
+tipo de árvore: AVL
+		Nome da Amostra: ./dataset/globalizacao.txt
+		Nome da entrada: política		Nome da palavra:sentido
+		Número de Ocorrências:200
+
+
+Tipo da árvore:Binária 
+		Nome da Amostra:./dataset/globalizacao.txt
+		Nome da Entrada:política		Nome da palavra:determinação
+		Número de ocorrências:133
+
+
+tipo de árvore: AVL
+		Nome da Amostra: ./dataset/politica.txt
+		Nome da entrada: software
+		Nome da palavra:metas
+		Número de Ocorrências:199
+
+
+Tipo da árvore:Binária 
+		Nome da Amostra:./dataset/politica.txt
+		Nome da Entrada:software
+		Nome da palavra:segurança
+		Número de ocorrências:134
+
+
+tipo de árvore: AVL
+		Nome da Amostra: ./dataset/politica.txt
+		Nome da entrada: política		Nome da palavra:metas
+		Número de Ocorrências:199
+
+
+Tipo da árvore:Binária 
+		Nome da Amostra:./dataset/politica.txt
+		Nome da Entrada:política		Nome da palavra:determinação
+		Número de ocorrências:134
+
+
+tipo de árvore: AVL
+		Nome da Amostra: ./dataset/ti.txt
+		Nome da entrada: software
+		Nome da palavra:desenvolvimento
+		Número de Ocorrências:200
+
+
+Tipo da árvore:Binária 
+		Nome da Amostra:./dataset/ti.txt
+		Nome da Entrada:software
+		Nome da palavra:sistemas
+		Número de ocorrências:134
+
+
+tipo de árvore: AVL
+		Nome da Amostra: ./dataset/ti.txt
+		Nome da entrada: política		Nome da palavra:desenvolvimento
+		Número de Ocorrências:200
+
+
+Tipo da árvore:Binária 
+		Nome da Amostra:./dataset/ti.txt
+		Nome da Entrada:política		Nome da palavra:sistemas
+		Número de ocorrências:134
+
+
+tipo de árvore: AVL
+		Nome da Amostra: ./dataset/ti2.txt
+		Nome da entrada: software
+		Nome da palavra:informações
+		Número de Ocorrências:200
+
+
+Tipo da árvore:Binária 
+		Nome da Amostra:./dataset/ti2.txt
+		Nome da Entrada:software
+		Nome da palavra:software
+		Número de ocorrências:134
+
+
+tipo de árvore: AVL
+		Nome da Amostra: ./dataset/ti2.txt
+		Nome da entrada: política		Nome da palavra:informações
+		Número de Ocorrências:200
+
+
+Tipo da árvore:Binária 
+		Nome da Amostra:./dataset/ti2.txt
+		Nome da Entrada:política		Nome da palavra:software
+		Número de ocorrências:134
+
+

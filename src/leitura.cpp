@@ -6,7 +6,9 @@ void erase_the_output_file(string nameOfFile)
     ofstream arquivo(nameOfFile, ios::out);
     if(arquivo.is_open())
     {
-        arquivo<<"Tipo de Árvore |\t Amostra de entrada |\t palavra de entrada |\t palavra \t|\tnúmero de repetições ";
+        arquivo<<"Como ler este arquivo?";
+        arquivo<<"Tipo de Árvore: Nome do tipo\n|\t\tAmostra de entrada: caminho_até_arquivo.txt\n|\t\tpalavra de entrada: palavra escolhida\n|\t\tpalavra:chave_da_heap \n|\t\tnúmero de repetições: número_de_repetições_da_chave";
+    arquivo<<"\n\n";
         arquivo.close();
     }
 }
@@ -53,8 +55,5 @@ void LerEntradasPorAmostra(Entradas_e_Amostras Dataframe)
             h = everythingForEachInput(Dataframe.amostras[arquivo], Dataframe.entradas[palavra]);
             make_the_trees(h, Dataframe.entradas[palavra], Dataframe.amostras[arquivo]);
         }
-//         necessidade
-// sobre
-
     }
 }

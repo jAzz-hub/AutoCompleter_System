@@ -124,13 +124,14 @@ void BTree::inOrdemToOutput(shared_ptr<BT> T, string nameOfFile, string nameOfIn
 {
     ofstream arquivo(nameOfFile, ios::app);  // Abre o arquivo para escrita, substituindo qualquer arquivo existente.
 
-    arquivo << "\n\t\t B \t\t\t"<<nameOfSample<<"\t\t\t"<< nameOfInput<<"\t\t\t";
+    // arquivo << "\n\t B \t\t\t"<<nameOfSample<<"\t\t"<< nameOfInput<<"\t";
     if (T != NULL)  // Verifica se o ponteiro não é nulo.
     {
         inOrdemWithoutPrint(T.get()->left_branch);
-        arquivo << T.get()->sub_root.key <<"\t\t"<<"\t\t\t"<<T.get()->sub_root.ocurrencies;
+        arquivo << "Tipo da árvore:Binária "<<"\n\t\tNome da Amostra:"<<nameOfSample<<"\n\t\tNome da Entrada:"<< nameOfInput<<"\t\tNome da palavra:"<< T.get()->sub_root.key <<"\n\t\tNúmero de ocorrências:"<<T.get()->sub_root.ocurrencies<<"\n\n\n";
         inOrdemWithoutPrint(T.get()->right_branch);
     }
+    arquivo<<"";
     arquivo.close();
 }
 
