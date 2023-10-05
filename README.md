@@ -34,14 +34,14 @@
     - [Arquivos](#Arquivos)
         - [Entradas](#Entradas)
         - [Funcionamento](#funcionamento)
-            - [Primeira Leitura do Arquivo]
-            - [Casos Especiais]
-            - [Construindo Hash]
-            - [Construindo Heap]
-                - [Heap Mínimo dos Maiores Valores]
-            - [Ordenando o Heap]
-            - [Construção das Árvores]
-            - [Saída]
+            - [Primeira Leitura do Arquivo](#1-primeira-leitura-do-arquivo)
+            - [Casos Especiais](#11-casos-especiais)
+            - [Construindo Hash](#2-construindo-a-hash)
+            - [Construindo Heap](#3-construindo-o-heap)
+                - [Heap Mínimo dos Maiores Valores](#31-heap-mínimo-dos-maiores-valores)
+            - [Ordenando o Heap](#4-ordenando-o-heap)
+            - [Construção das Árvores](#5-construção-das-árvores)
+            - [Saída](#6-saída)
     - [Conclusão, Reflexões e Aprendizados](#conclusão-reflexões-e-aprendizados)
         - [Diferentes Usos de Árvores](#diferentes-usos-de-árvoress)
         - [O Potencial da Árvore de Huffman](#o-potencial-da-árvore-de-huffman)
